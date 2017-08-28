@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>todolist-servlet-spring-jdbc</display-name>
+  <welcome-file-list>
+    <welcome-file>/TodoListServlet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TodoListServlet</display-name>
+    <servlet-name>TodoListServlet</servlet-name>
+    <servlet-class>com.nj.todolist.servlets.TodoListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoListServlet</servlet-name>
+    <url-pattern>/TodoListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewTodoServlet</display-name>
+    <servlet-name>NewTodoServlet</servlet-name>
+    <servlet-class>com.nj.todolist.servlets.NewTodoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewTodoServlet</servlet-name>
+    <url-pattern>/NewTodoServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
